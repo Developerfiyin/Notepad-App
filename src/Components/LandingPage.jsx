@@ -6,8 +6,6 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const LandingPage = () => {
   const navigate = useNavigate();
 
-      
- 
   return (
     <main className="bg-black/90 w-full h-screen items-center py-16 px-6">
       <div className="mx-100 gap-4 font-semibold text-white rounded-2xl border border-gray-500 py-12 flex flex-col bg-black/60 text-center">
@@ -26,7 +24,10 @@ const LandingPage = () => {
           <FaArrowRightLong className="transition-transform duration-300 transform group-hover:translate-x-1.5" />
         </button>
 
-        <button className="items-center justify-around group transition-all duration-300 hover:border-green-500 flex gap-5  border border-white/45 py-6 px-24 rounded-2xl mx-auto">
+        <button
+          onClick={() => navigate("/signin")}
+          className="items-center justify-around group transition-all duration-300 hover:border-green-500 flex gap-5  border border-white/45 py-6 px-24 rounded-2xl mx-auto"
+        >
           <div
             className=" space-y-1 
           "
