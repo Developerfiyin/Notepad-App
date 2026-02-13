@@ -2,11 +2,17 @@ import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { LuSearch } from "react-icons/lu";
 import { BsViewStacked } from "react-icons/bs";
+import { MdOutlineViewAgenda } from "react-icons/md";
 
+import { MdGridView } from "react-icons/md";
+import { useState } from "react";
 
 import image1 from "../assets/image1.png";
 
 const Dashboard = () => {
+  // false = List view, true = Grid view
+  const [isGrid, setIsGrid] = useState(false);
+
   return (
     <section className="bg-black py-10 px-6 text-white">
       <div className="flex gap-5 border-b border-white/55">
@@ -16,7 +22,7 @@ const Dashboard = () => {
 
         <label className="relative block">
           <LuSearch
-            size={18}                                                       
+            size={18}
             className="absolute left-3 top-1/4 -translate-y-1/2 text-green-400 pointer-events-none"
           />
           <input
@@ -26,13 +32,23 @@ const Dashboard = () => {
           />
         </label>
 
-         
-       
-
-
-
-
-        
+        <button
+          onClick={() => setIsGrid(!isGrid)}
+          className="mb-9 ml-8 rounded-lg hover:bg-black/65  transition-colors  outline-none"
+          aria-label="Toggle View"
+        >
+          {isGrid ? (
+            <MdOutlineViewAgenda
+              size={30}
+              className=" hover:text-white text-white/55 "
+            />
+          ) : (
+            <MdGridView
+              size={30}
+              className=" hover:text-white text-white/55 "
+            />
+          )}
+        </button>
       </div>
     </section>
   );
