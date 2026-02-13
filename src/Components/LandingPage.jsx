@@ -4,14 +4,10 @@ import { useNavigate } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const LandingPage = () => {
-  const { user } = useAuth(); // Your custom auth hook
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (user) {
-      navigate("/dashboard");
-    }
-  }, [user]);
+      
+ 
   return (
     <main className="bg-black/90 w-full h-screen items-center py-16 px-6">
       <div className="mx-100 gap-4 font-semibold text-white rounded-2xl border border-gray-500 py-12 flex flex-col bg-black/60 text-center">
@@ -22,7 +18,7 @@ const LandingPage = () => {
         </h4>
 
         <button
-          onClick={() => navigate("/signup")}
+          onClick={() => navigate("/signin")}
           className="items-center justify-around group transition-all duration-300 hover:border-green-500 flex gap-5 border border-white/45 py-6 px-14 rounded-2xl mx-auto"
         >
           <div className="h-4 w-4 rounded-full bg-green-500"></div>
