@@ -25,6 +25,31 @@ const Dashboard = () => {
 
           />
         </label>
+
+
+
+
+
+
+    <div className="relative w-full max-w-md">
+      {/* 1. The Icon Container */}
+      <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+        <LuSearch className="w-5 h-5 text-gray-400" />
+      </div>
+
+      {/* 2. The Input Tag */}
+      <input
+        type="search"
+        className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 pl-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500"
+        placeholder="Search notes..."
+        required
+      />
+    </div>
+  
+
+
+
+
       </div>
     </section>
   );
