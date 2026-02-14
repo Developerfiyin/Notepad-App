@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // Note the '/fa' at the end - that's how you pick your specific library
 import { FaBars, FaTimes } from "react-icons/fa";
-import { HiOutlineSearch } from "react-icons/hi"; // Heroicons version for search
+import { HiOutlineSearch } from "react-icons/hi"; // Heroicons version for sea
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="text-xl font-bold text-indigo-600">NoteFlow</div>
 
-        {/* Search Bar (Updated with React Icons) */}
+        
         <div className="hidden sm:block relative w-64">
           <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-gray-400">
             <HiOutlineSearch size={20} />
@@ -53,3 +53,5 @@ const Navbar = () => {
     </nav>
   );
 };
+
+export default Navbar;
