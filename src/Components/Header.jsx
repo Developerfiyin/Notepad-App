@@ -82,15 +82,20 @@ const Header = () => {
           <button className="font-semibold text-2xl">Notification</button>
         </div>
 
-        <div>
+        <div className="flex gap-5">
           <button type="button">
             <MdEdit size={30} />
           </button>
+          <button className="font-semibold text-2xl"> Edit Label </button>
         </div>
 
-        <button type="button">
-          <IoMdArchive size={30} />
-        </button>
+        <div className="flex gap-5">
+          <button type="button">
+            <IoMdArchive size={30} />
+          </button>
+          <button className="font-semibold text-xl"> Archive </button>
+        </div>
+
         <button type="button">
           <IoTrash size={30} />
         </button>
