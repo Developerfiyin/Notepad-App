@@ -18,7 +18,7 @@ const Header = () => {
 
   const [isOpen, setIsOpened] = useState(false);
 
-   const [bulb, setBulb] = useState(false)
+  const [bulb, setBulb] = useState(false);
 
   return (
     <section className="bg-black border-white border-b   text-white sticky top-0 z-50">
@@ -64,11 +64,17 @@ const Header = () => {
       </div>
 
       <div className=" bg-black/55 pl-26  justify-evenly flex gap-5 flex-col  ">
-        <button type="button" className="h-10 w-10  rounded-full bg-orange-400 " >
-          <FaLightbulb size={30} className="mx-auto" />
-        </button>
+      
+        <div className="flex gap-5">
+          <button
+            type="button"
+            className="h-10 w-10  rounded-full bg-orange-400 "
+          >
+            <FaLightbulb size={30} className="mx-auto" />
+          </button>
+        </div>
 
-        <button type="button" >
+        <button type="button">
           <FaBell size={30} />
         </button>
         <button type="button">
@@ -80,9 +86,7 @@ const Header = () => {
         <button type="button">
           <IoTrash size={30} />
         </button>
-
       </div>
-
     </section>
   );
 };
