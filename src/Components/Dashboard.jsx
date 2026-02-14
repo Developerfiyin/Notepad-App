@@ -1,7 +1,8 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { LuSearch } from "react-icons/lu";
-import { BsViewStacked } from "react-icons/bs";
+import { IoSettings } from "react-icons/io5";
+
 import { MdOutlineViewAgenda } from "react-icons/md";
 
 import { MdGridView } from "react-icons/md";
@@ -15,7 +16,7 @@ const Dashboard = () => {
 
   return (
     <section className="bg-black py-10 px-6 text-white">
-      <div className="flex gap-5 border-b border-white/55">
+      <div className="flex justify-evenly gap-5 border-b border-white/55">
         <GiHamburgerMenu size={30} color="white" />
         <img src={image1} alt="THE NOTE IMAGES" className="mb-9" />
         <h2 className="font- medium text-2xl">Notetaker App</h2>
@@ -49,6 +50,8 @@ const Dashboard = () => {
             />
           )}
         </button>
+
+        <IoSettings size={30} className="ml-5 mt-2 text-white/55 hover:text-white " />
       </div>
     </section>
   );
