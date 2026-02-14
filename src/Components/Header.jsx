@@ -64,44 +64,45 @@ const Header = () => {
       </div>
 
       <div className=" bg-black/55 pl-26  justify-evenly flex gap-5 flex-col  ">
-        <div className="flex gap-10">
+        <div className="flex gap-10 space-x-12 bg-pink-500">
           <button
             type="button"
             className="h-10 w-10  rounded-full bg-orange-400"
           >
             <FaLightbulb size={30} className="mx-auto" />
           </button>
-          <button className="font-semibold text-2xl">Notes</button>
+          <button className="font-semibold text-xl">Notes</button>
         </div>
 
-        <div className=" flex gap-10">
+        <div className=" bg-red-400 flex gap-10 space-x-12">
           <button type="button">
             <FaBell size={30} />
           </button>
 
-          <button className="font-semibold text-2xl">Notification</button>
+          <button className="font-semibold text-xl">Notification</button>
         </div>
 
-        <div className="flex gap-10">
+        <div className="flex gap-10 space-x-12 bg-blue-600">
           <button type="button">
             <MdEdit size={30} />
           </button>
-          <button className="font-semibold text-2xl"> Edit Label </button>
+          <button className="font-semibold text-xl"> Edit Label </button>
         </div>
 
-        <div className="flex gap-10">
+        <div className="flex gap-10 space-x-12 bg-green-300">
           <button type="button">
             <IoMdArchive size={30} />
           </button>
           <button className="font-semibold text-xl"> Archive </button>
         </div>
 
-        <div className="flex gap-10">
+        <div className="flex gap-10 space-x-12 bg-amber-400">
           <button type="button">
             <IoTrash size={30} />
           </button>
           <button className="font-semibold text-xl"> Trash </button>
         </div>
+        
       </div>
     </section>
   );
