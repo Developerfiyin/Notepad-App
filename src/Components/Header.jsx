@@ -63,11 +63,11 @@ const Header = () => {
         />
       </div>
 
-      <div className=" bg-black/55 space-y-2 h-70 flex-col w-90  ">
+      <div className=" bg-black/55 space-y-2 h-100 flex-col w-90  ">
         <div className="flex p-2  rounded-full gap-5 bg-pink-500">
           <FaLightbulb
             size={24}
-            className=" mx-10 h-10 w-10 p-1 text-white/80   rounded-full bg-orange-400 "
+            className=" mx-10 h-10 w-10 p-1 text-white/80 rounded-full bg-orange-400 "
           />
           <button className="font-semibold text-xl">Notes</button>
         </div>
@@ -82,17 +82,18 @@ const Header = () => {
           <button className="font-semibold  text-xl"> Edit Label </button>
         </div>
 
-        <div className="flex gap-10 space-x-12 bg-green-300">
+        <div className="flex gap-5 p-2  rounded-full bg-green-300">
           <button type="button">
-            <IoMdArchive size={30} />
+            <IoMdArchive
+              size={30}
+              className="mx-10 h-10 w-10 p-1 text-white/80"
+            />
           </button>
           <button className="font-semibold text-xl"> Archive </button>
         </div>
 
-        <div className="flex gap-10 space-x-12 bg-amber-400">
-          <button type="button">
-            <IoTrash size={30} />
-          </button>
+        <div className="flex gap-5 p-2 rounded-full bg-amber-400">
+          <IoTrash size={30} className="mx-10 h-10 w-10 p-1 text-white/80 " />
           <button className="font-semibold text-xl"> Trash </button>
         </div>
       </div>
