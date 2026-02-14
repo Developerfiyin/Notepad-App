@@ -1,13 +1,8 @@
 import React from "react";
-
+import Header from "./Header";
 
 const Dashboard = () => {
-  // false = List view, true = Grid view
-  const [isGrid, setIsGrid] = useState(false);
-
-  return (
-
-  );
+  return <Header />;
 };
 
 export default Dashboard;

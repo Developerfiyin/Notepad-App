@@ -1,4 +1,3 @@
-
 import { GiHamburgerMenu } from "react-icons/gi";
 import { LuSearch } from "react-icons/lu";
 import { IoSettings } from "react-icons/io5";
@@ -10,9 +9,11 @@ import { useState } from "react";
 
 import image1 from "../assets/image1.png";
 const Header = () => {
-  return (
+  // false = List view, true = Grid view
+  const [isGrid, setIsGrid] = useState(false);
 
-    <section className="bg-black py-10 px-6 text-white">
+  return (
+    <section className="bg-black py-6 px-6 text-white">
       <div className="flex justify-evenly gap-5 border-b border-white/55">
         <GiHamburgerMenu size={30} color="white" />
         <img src={image1} alt="THE NOTE IMAGES" className="mb-9" />
@@ -48,13 +49,13 @@ const Header = () => {
           )}
         </button>
 
-        <IoSettings size={30} className="ml-5 mt-2 text-white/55 hover:text-white " />
+        <IoSettings
+          size={30}
+          className="ml-5 mt-2 text-white/55 hover:text-white "
+        />
       </div>
     </section>
+  );
+};
 
-
-
-  )
-}
-
-export default Header
+export default Header;
