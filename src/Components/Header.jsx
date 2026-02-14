@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <section className="bg-black border-white border-b   text-white sticky top-0 z-50">
-      <div className="flex mx-auto px-4 h-20 items-center max-w-7xl justify-evenly gap-5 ">
+      <div className="flex mx-auto px-4 h-20 items-center max-w-7xl justify-between gap-5 ">
         <GiHamburgerMenu size={30} color="white" />
         <img src={image1} alt="THE NOTE IMAGES" className="" />
         <h2 className="font- medium text-2xl">Notetaker App</h2>
@@ -63,14 +63,14 @@ const Header = () => {
         />
       </div>
 
-      <div className=" bg-black/55 pl-26  justify-evenly flex gap-5 flex-col  ">
-        <div className="flex gap-10 space-x-12 bg-pink-500">
-          <button
-            type="button"
-            className="h-10 w-10  rounded-full bg-orange-400"
-          >
-            <FaLightbulb size={30} className="mx-auto" />
-          </button>
+      <div className=" bg-black/55 space-y-2 h-70 flex-col w-90  ">
+        <div className="flex p-2  rounded-full gap-5 bg-pink-500">
+          
+            <FaLightbulb
+              size={24}
+              className=" mx-10 h-10 w-10 p-1 text-amber-50   rounded-full bg-orange-400 "
+            />
+    
           <button className="font-semibold text-xl">Notes</button>
         </div>
 
@@ -82,10 +82,9 @@ const Header = () => {
           <button className="font-semibold text-xl">Notification</button>
         </div>
 
-        <div className="flex gap-10 space-x-12 bg-blue-600">
-          <button type="button">
-            <MdEdit size={30} />
-          </button>
+        <div className="flex gap-10  bg-blue-600">
+          <MdEdit size={30} className=" " />
+
           <button className="font-semibold text-xl"> Edit Label </button>
         </div>
 
@@ -102,7 +101,6 @@ const Header = () => {
           </button>
           <button className="font-semibold text-xl"> Trash </button>
         </div>
-        
       </div>
     </section>
   );
