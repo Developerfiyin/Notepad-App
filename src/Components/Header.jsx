@@ -3,6 +3,12 @@ import { LuSearch } from "react-icons/lu";
 import { IoSettings } from "react-icons/io5";
 import { MdOutlineViewAgenda } from "react-icons/md";
 import { MdGridView } from "react-icons/md";
+import { FaLightbulb } from "react-icons/fa";
+import { FaBell } from "react-icons/fa";
+import { MdEdit } from "react-icons/md";
+import { IoMdArchive } from "react-icons/io";
+import { IoTrash } from "react-icons/io5";
+
 import { useState } from "react";
 
 import image1 from "../assets/image1.png";
@@ -10,8 +16,10 @@ const Header = () => {
   // false = List view, true = Grid view
   const [isGrid, setIsGrid] = useState(false);
 
+  const [isOpen, setIsOpened] = useState(false);
+
   return (
-    <section className="bg-black border-white/55 border-b  text-white sticky top-0 z-50">
+    <section className="bg-black border-white border-b   text-white sticky top-0 z-50">
       <div className="flex mx-auto px-4 h-20 items-center max-w-7xl justify-evenly gap-5 ">
         <GiHamburgerMenu size={30} color="white" />
         <img src={image1} alt="THE NOTE IMAGES" className="" />
@@ -51,6 +59,25 @@ const Header = () => {
           size={30}
           className="ml-5 mt-2 text-white/55 hover:text-white "
         />
+      </div>
+
+      <div className=" bg-red-500 mx-auto px-4 flex gap-5 flex-col  ">
+        <button type="button">
+          <FaLightbulb size={30} />
+        </button>
+
+        <button type="button" >
+          <FaBell size={30} />
+        </button>
+        <button type="button">
+          <MdEdit size={30} />
+        </button>
+        <button type="button">
+          <IoMdArchive size={30} />
+        </button>
+        <button type="button">
+          <IoTrash size={30} />
+        </button>
       </div>
     </section>
   );
