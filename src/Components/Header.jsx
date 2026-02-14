@@ -39,7 +39,7 @@ const Header = () => {
           {isGrid ? (
             <MdOutlineViewAgenda
               size={30}
-              className=" hover:text-white text-white/55 "
+              className=" hover:text-white hover:bg-white/20 hover:py-0.5 hover:rounded-full hover:px-0.5 text-white/55 "
             />
           ) : (
             <MdGridView
