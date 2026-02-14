@@ -64,7 +64,7 @@ const Header = () => {
       </div>
 
       <div className=" bg-black/55 pl-26  justify-evenly flex gap-5 flex-col  ">
-        <div className="flex gap-5">
+        <div className="flex gap-10">
           <button
             type="button"
             className="h-10 w-10  rounded-full bg-orange-400"
@@ -74,7 +74,7 @@ const Header = () => {
           <button className="font-semibold text-2xl">Notes</button>
         </div>
 
-        <div className=" flex gap-5">
+        <div className=" flex gap-10">
           <button type="button">
             <FaBell size={30} />
           </button>
@@ -82,23 +82,26 @@ const Header = () => {
           <button className="font-semibold text-2xl">Notification</button>
         </div>
 
-        <div className="flex gap-5">
+        <div className="flex gap-10">
           <button type="button">
             <MdEdit size={30} />
           </button>
           <button className="font-semibold text-2xl"> Edit Label </button>
         </div>
 
-        <div className="flex gap-5">
+        <div className="flex gap-10">
           <button type="button">
             <IoMdArchive size={30} />
           </button>
           <button className="font-semibold text-xl"> Archive </button>
         </div>
 
-        <button type="button">
-          <IoTrash size={30} />
-        </button>
+        <div className="flex gap-10">
+          <button type="button">
+            <IoTrash size={30} />
+          </button>
+          <button className="font-semibold text-xl"> Trash </button>
+        </div>
       </div>
     </section>
   );
