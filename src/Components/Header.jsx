@@ -16,14 +16,17 @@ const Header = () => {
   // false = List view, true = Grid view
   const [isGrid, setIsGrid] = useState(false);
 
-  const [isOpen, setIsOpened] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const [bulb, setBulb] = useState(false);
 
   return (
     <section className="bg-black border-white border-b   text-white sticky top-0 z-50">
       <div className="flex mx-auto px-4 h-20 items-center max-w-7xl justify-between gap-5 ">
-        <GiHamburgerMenu size={30} color="white" />
+        <button onClick={() => setIsOpen(!isOpen)} type="button">
+          <GiHamburgerMenu size={30} color="white" />
+        </button>
+
         <img src={image1} alt="THE NOTE IMAGES" className="" />
         <h2 className="font- medium text-2xl">Notetaker App</h2>
 

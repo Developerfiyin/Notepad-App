@@ -26,8 +26,7 @@ const Navbar = () => {
         {/* MOBILE MENU BUTTON */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-2 text-gray-600 focus:outline-none"
-        >
+          className="md:hidden p-2 text-gray-600 focus:outline-none" >
           {/* Swapping the icon based on state */}
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
