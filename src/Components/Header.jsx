@@ -103,7 +103,7 @@ const Header = () => {
             <button className="font-semibold text-xl"> Trash </button>
           </div>
 
-          <div className=" mt-50 ml-4 ">
+          <div className=" mt-50 ml-6 ">
       <a href=""> Open source licensce</a>
           </div>
         </div>
@@ -113,3 +113,5 @@ const Header = () => {
 };
 
 export default Header;
+
+
