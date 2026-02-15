@@ -66,29 +66,29 @@ const Header = () => {
         />
       </div>
 
-      <main>
+      <main className="h-screen max-w-7xl">
         <div
           className={`${isOpen ? "block" : "hidden"} bg-black/55 h-full space-y-0.5  flex-col w-1/4  `}
         >
-          <div className="flex p-2  rounded-full gap-5 bg-yellow-950 ">
+          <div className="flex p-2  rounded-r-full gap-5 bg-green-400 ">
             <FaLightbulb
               size={24}
-              className=" mx-10 h-10 w-10 p-1 text-white/80 rounded-full bg-orange-400 "
+              className=" mx-10 h-10 w-10 p-1 text-white/80 rounded-full bg-yellow-400 "
             />
             <button className="font-semibold text-xl">Notes</button>
           </div>
 
-          <div className=" hover:bg-white/20 p-2 rounded-full gap-5 flex ">
+          <div className=" hover:bg-white/20 p-2 rounded-r-full gap-5 flex ">
             <FaBell size={24} className="mx-10 h-10 w-10 p-1 text-white/80 " />
             <button className="font-semibold text-xl">Notification</button>
           </div>
 
-          <div className="flex gap-5 p-2 rounded-full hover:bg-white/20">
+          <div className="flex gap-5 p-2 rounded-r-full hover:bg-white/20">
             <MdEdit size={24} className="mx-10 h-10 w-10 p-1 text-white/80  " />
             <button className="font-semibold  text-xl"> Edit Label </button>
           </div>
 
-          <div className="flex gap-5 p-2 rounded-full hover:bg-white/20">
+          <div className="flex gap-5 p-2 rounded-r-full hover:bg-white/20">
             <button type="button">
               <IoMdArchive
                 size={24}
@@ -98,7 +98,7 @@ const Header = () => {
             <button className="font-semibold text-xl"> Archive </button>
           </div>
 
-          <div className="flex gap-5 p-2 rounded-full hover:bg-white/20">
+          <div className="flex gap-5 p-2 rounded-r-full hover:bg-white/20">
             <IoTrash size={24} className="mx-10 h-10 w-10 p-1 text-white/80 " />
             <button className="font-semibold text-xl"> Trash </button>
           </div>
