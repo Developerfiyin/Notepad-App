@@ -68,7 +68,7 @@ const Header = () => {
 
       <main className="h-screen max-w-7xl">
         <div
-          className={`${isOpen ? "block" : "hidden"} bg-black/55 h-full space-y-0.5  flex-col w-1/4  `}
+          className={`${isOpen ? "block" : "hidden"} bg-black/5 h-140 mt-2 space-y-0.5  flex-col w-1/4`}
         >
           <div className="flex p-2  rounded-r-full gap-5 bg-green-400 ">
             <FaLightbulb
