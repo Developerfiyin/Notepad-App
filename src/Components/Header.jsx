@@ -21,7 +21,7 @@ const Header = () => {
   const [bulb, setBulb] = useState(false);
 
   return (
-    <section className="bg-black border-white border-b   text-white sticky top-0 z-50">
+    <section className="bg-black border-white border-b-2 text-white sticky top-0 z-50">
       <div className="flex mx-auto px-4 h-20 items-center max-w-7xl justify-between gap-5 ">
         <button onClick={() => setIsOpen(!isOpen)} type="button">
           <GiHamburgerMenu size={30} color="white" />
@@ -70,7 +70,7 @@ const Header = () => {
         <div
           className={`${isOpen ? "block" : "hidden"} bg-black/5 h-140 mt-2 space-y-0.5  flex-col w-1/4`}
         >
-          <div className="flex p-2  rounded-r-full gap-5 bg-green-400 ">
+          <div className="flex p-2 mt-2 rounded-r-full gap-5 bg-green-400 ">
             <FaLightbulb
               size={24}
               className=" mx-10 h-10 w-10 p-1 text-white/80 rounded-full bg-yellow-400 "
@@ -101,6 +101,10 @@ const Header = () => {
           <div className="flex gap-5 p-2 rounded-r-full hover:bg-white/20">
             <IoTrash size={24} className="mx-10 h-10 w-10 p-1 text-white/80 " />
             <button className="font-semibold text-xl"> Trash </button>
+          </div>
+
+          <div className=" mt-50 ml-4 ">
+      <a href=""> Open source licensce</a>
           </div>
         </div>
       </main>
