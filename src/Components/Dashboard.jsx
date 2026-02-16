@@ -1,14 +1,3 @@
-{
-  /*import React from "react";
-import Header from "./Header";
-
-const Dashboard = () => {
-  return <Header />;
-};
-/
-export default Dashboard;
-*/
-}
 import { useState } from "react";
 import {
   HiPlus,
