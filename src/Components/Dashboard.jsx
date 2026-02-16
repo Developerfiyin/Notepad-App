@@ -65,7 +65,6 @@ export default function Dashboard() {
             Notetaker App
           </span>
         </div>
-
         <nav className="flex-1 px-3 space-y-2 mt-4">
           <NavItem
             icon={<HiOutlineDocumentText />}
@@ -84,12 +83,12 @@ export default function Dashboard() {
             isExpanded={isExpanded}
           />
         </nav>
-
         <NavItem icon={<MdLogout />} label="Log-out" isExpanded={isExpanded} />
-
-        <a href="http://privacy" 
-        isExpanded={isExpanded}
-        > Open-source Liscense</a>
+      
+        <div isExpanded={isExpanded} >
+           <a href="http://privacy" className="p-5">Open-source</a>
+        </div>
+  
       </aside>
 
       {/* MAIN CONTENT */}
