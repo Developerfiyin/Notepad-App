@@ -85,14 +85,11 @@ export default function Dashboard() {
           />
         </nav>
 
-        <NavItem
-          icon={<MdLogout />}
-          label="Log-out"
-          isExpanded={isExpanded}
-        />
-      
+        <NavItem icon={<MdLogout />} label="Log-out" isExpanded={isExpanded} />
 
-    
+        <a href="http://privacy" 
+        isExpanded={isExpanded}
+        > Open-source Liscense</a>
       </aside>
 
       {/* MAIN CONTENT */}
