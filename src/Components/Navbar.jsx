@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// Note the '/fa' at the end - that's how you pick your specific library
+
 import { FaBars, FaTimes } from "react-icons/fa";
 import { HiOutlineSearch } from "react-icons/hi"; // Heroicons version for sea
 
