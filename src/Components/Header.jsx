@@ -43,49 +43,7 @@ const Header = () => {
         </label>
 
         <button
-          onClick={() => setIsGrid(!isGrid)}
-          className=" ml-8 rounded-lg hover:bg-black/65  transition-colors  outline-none"
-          aria-label="Toggle View"
-        >
-          {isGrid ? (
-            <MdOutlineViewAgenda
-              size={30}
-              className=" hover:text-white hover:bg-white/20 hover:py-0.5 hover:rounded-full hover:px-0.5 text-white/55 "
-            />
-          ) : (
-            <MdGridView
-              size={30}
-              className=" hover:text-white text-white/55 "
-            />
-          )}
-        </button>
-
-        <IoSettings
-          size={30}
-          className="ml-5 mt-2 text-white/55 hover:text-white "
-        />
-      </div>
-
-      <main className="h-screen max-w-7xl">
-        <div
-          className={`${isOpen ? "block" : "hidden"} bg-black/5 h-140 mt-2 space-y-0.5  flex-col w-1/4`}
-        >
-          <div className="flex p-2 mt-2 rounded-r-full gap-5 bg-green-400 ">
-            <FaLightbulb
-              size={24}
-              className=" mx-10 h-10 w-10 p-1 text-white/80 rounded-full bg-yellow-400 "
-            />
-            <button className="font-semibold text-xl">Notes</button>
-          </div>
-
-          <div className=" hover:bg-white/20 p-2 rounded-r-full gap-5 flex ">
-            <FaBell size={24} className="mx-10 h-10 w-10 p-1 text-white/80 " />
-            <button className="font-semibold text-xl">Notification</button>
-          </div>
-
-          <div className="flex gap-5 p-2 rounded-r-full hover:bg-white/20">
-            <MdEdit size={24} className="mx-10 h-10 w-10 p-1 text-white/80  " />
-            <button className="font-semibold  text-xl"> Edit Label </button>
+          
      
 
 
