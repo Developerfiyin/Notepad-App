@@ -86,18 +86,6 @@ const Header = () => {
           <div className="flex gap-5 p-2 rounded-r-full hover:bg-white/20">
             <MdEdit size={24} className="mx-10 h-10 w-10 p-1 text-white/80  " />
             <button className="font-semibold  text-xl"> Edit Label </button>
-          </div>
-
-          <div className="flex gap-5 p-2 rounded-r-full hover:bg-white/20">
-            <button type="button">
-              <IoMdArchive
-                size={24}
-                className="mx-10 h-10 w-10 p-1 text-white/80"
-              />
-            </button>
-            <button className="font-semibold text-xl"> Archive </button>
-          </div>
-
      
 
 
