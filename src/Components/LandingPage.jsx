@@ -25,7 +25,7 @@ const LandingPage = () => {
         </button>
 
         <button
-          onClick={() => navigate("/navbar")}
+          onClick={() => navigate("/signin")}
           className="items-center justify-around group transition-all duration-300 hover:border-green-500 flex gap-5  border border-white/45 py-6 px-24 rounded-2xl mx-auto"
         >
           <div
