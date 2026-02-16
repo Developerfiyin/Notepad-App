@@ -98,20 +98,6 @@ const Header = () => {
             <button className="font-semibold text-xl"> Archive </button>
           </div>
 
-          <div className="flex gap-5 p-2 rounded-r-full hover:bg-white/20">
-            <IoTrash size={24} className="mx-10 h-10 w-10 p-1 text-white/80 " />
-            <button className="font-semibold text-xl"> Trash </button>
-          </div>
-
-          <div className=" mt-50 ml-6 ">
-      <a href=""> Open source licensce</a>
-          </div>
-        </div>
-      </main>
-    </section>
-  );
-};
-
-export default Header;
+     
 
 

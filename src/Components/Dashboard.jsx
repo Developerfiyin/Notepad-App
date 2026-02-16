@@ -70,7 +70,7 @@ export default function Dashboard() {
           <span
             className={`ml-4 font-black text-xl text-indigo-600 transition-opacity ${isExpanded ? "opacity-100" : "opacity-0 hidden"}`}
           >
-            SkyNotes
+            Notetaker App
           </span>
         </div>
 
