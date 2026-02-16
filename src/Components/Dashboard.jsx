@@ -11,63 +11,6 @@ export default Dashboard;
 }
 
 
-        <div className="p-4 border-t border-slate-100">
-          <button className="w-full flex items-center gap-3 px-4 py-3 text-slate-500 hover:text-red-500 hover:bg-red-50 rounded-xl transition-all font-medium">
-            <HiOutlineLogout className="text-xl" /> Log out
-          </button>
-        </div>
-      </aside>
-
-      {/* 2. MAIN AREA: Scrolls independently */}
-      <main className="flex-1 flex flex-col overflow-hidden">
-        {/* HEADER */}
-        <header className="h-20 bg-white/80 backdrop-blur-md border-b border-slate-200 flex items-center justify-between px-10 shrink-0">
-          <div className="relative w-full max-w-md">
-            <HiSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-lg" />
-            <input
-              type="text"
-              placeholder="Search through your thoughts..."
-              className="w-full pl-12 pr-4 py-3 bg-slate-100 border-none rounded-2xl text-sm focus:ring-2 focus:ring-indigo-500 outline-none transition-all"
-            />
-          </div>
-
-          <button
-            onClick={() => setIsModalOpen(true)}
-            className="ml-4 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-2xl flex items-center gap-2 font-bold shadow-lg shadow-indigo-200 transition-all hover:-translate-y-0.5 active:translate-y-0"
-          >
-            <HiPlus className="text-xl" /> New Note
-          </button>
-        </header>
-
-        {/* CONTENT GRID */}
-        <div className="flex-1 overflow-y-auto p-10">
-          <div className="max-w-7xl mx-auto">
-            <header className="mb-8">
-              <h2 className="text-3xl font-bold text-slate-800">Your Notes</h2>
-              <p className="text-slate-500 mt-1">
-                You have {notes.length} notes saved.
-              </p>
-            </header>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-              {notes.map((note) => (
-                <NoteCard
-                  key={note.id}
-                  note={note}
-                  onDelete={() => deleteNote(note.id)}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <NoteModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        onSave={addNote}
-      />
-    </div>
   );
 }
 
