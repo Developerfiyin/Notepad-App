@@ -21,7 +21,7 @@ import {
   HiOutlineLogout,
 } from "react-icons/hi";
 import { FaRegStickyNote } from "react-icons/fa";
-import NoteModal from "../components/NoteModal";
+import NoteModal from "./Notemodal";
 
 export default function Dashboard() {
   const [notes, setNotes] = useState([
@@ -37,6 +37,12 @@ export default function Dashboard() {
       title: "Weekly Groceries",
       content: "Eggs, Milk, Avocados, Coffee beans, Sourdough bread.",
       date: "Feb 15",
+    },
+    {
+      id: 3,
+      title: " How to settle conflicts among siblings.",
+      content: " Pray for wisdom, never pick a side, let your goal be resolving the issues not emphathy. .",
+      date: "Feb 14",
     },
   ]);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -151,7 +157,7 @@ function NavItem({ icon, label, active = false }) {
 // Sub-component for Note Cards
 function NoteCard({ note, onDelete }) {
   return (
-    <div className="group bg-white border border-slate-200 p-6 rounded-[2rem] hover:border-indigo-300 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-300 cursor-pointer relative">
+    <div className="group bg-white border border-slate-200 p-6 rounded-4xl hover:border-indigo-300 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-300 cursor-pointer relative">
       <div className="flex justify-between items-start mb-4">
         <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 bg-slate-50 px-3 py-1 rounded-full">
           {note.date}
