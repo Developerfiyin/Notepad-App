@@ -85,9 +85,7 @@ export default function Dashboard() {
         </nav>
         <NavItem icon={<MdLogout />} label="Log-out" isExpanded={isExpanded} />
       
-        <div isExpanded={isExpanded} >
-           <a href="http://privacy" className="p-5">Open-source</a>
-        </div>
+        
   
       </aside>
 
