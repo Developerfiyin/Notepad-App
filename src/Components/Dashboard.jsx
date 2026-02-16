@@ -44,7 +44,7 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="flex h-screen bg-slate-50 text-slate-900 overflow-hidden">
+    <div className="flex h-screen bg-slate-50 text-green-900 overflow-hidden">
       {/* SIDEBAR (Collapsible) */}
       <aside
         className={`bg-white border-r border-slate-200 flex flex-col transition-all duration-300 ${isExpanded ? "w-64" : "w-20"}`}
@@ -52,12 +52,12 @@ export default function Dashboard() {
         <div className="h-20 flex items-center px-6">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="p-2 hover:bg-slate-100 rounded-xl text-indigo-600"
+            className="p-2 hover:bg-green-200 rounded-xl text-green-400"
           >
             <HiMenuAlt2 className="text-2xl" />
           </button>
           <span
-            className={`ml-4 font-black text-xl text-indigo-600 transition-opacity ${isExpanded ? "opacity-100" : "opacity-0 hidden"}`}
+            className={`ml-4 font-black text-xl text-green-400 transition-opacity ${isExpanded ? "opacity-100" : "opacity-0 hidden"}`}
           >
             Notetaker App
           </span>
@@ -86,20 +86,20 @@ export default function Dashboard() {
       {/* MAIN CONTENT */}
       <main className="flex-1 flex flex-col">
         {/* HEADER */}
-        <header className="h-20 bg-white border-b border-slate-200 flex items-center justify-between px-10">
+        <header className="h-20 bg-white border-b border-teal-200 flex items-center justify-between px-10">
           <div className="relative w-full max-w-md">
-            <HiSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-lg" />
+            <HiSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-teal-400 text-lg" />
             <input
               type="text"
               placeholder="Search..."
-              className="w-full pl-12 pr-4 py-2.5 bg-slate-100 border-none rounded-xl text-sm focus:ring-2 focus:ring-indigo-500 outline-none"
+              className="w-full pl-12 pr-4 py-2.5 bg-slate-100 border-none rounded-xl text-sm focus:ring-2 focus:ring-green-400 outline-none"
             />
           </div>
 
           {/* TRIGGER MODAL */}
           <button
             onClick={() => setIsModalOpen(true)}
-            className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2.5 rounded-xl flex items-center gap-2 font-bold shadow-lg shadow-indigo-100 transition-all active:scale-95"
+            className="bg-green-400 hover:bg-teal-500 text-white px-6 py-2.5 rounded-xl flex items-center gap-2 font-bold shadow-lg shadow-green-100 transition-all active:scale-95"
           >
             <HiPlus className="text-xl" /> New Note
           </button>
@@ -133,7 +133,7 @@ export default function Dashboard() {
 function NavItem({ icon, label, active, isExpanded }) {
   return (
     <button
-      className={`w-full flex items-center p-3.5 rounded-2xl transition-all ${active ? "bg-indigo-50 text-indigo-700" : "text-slate-500 hover:bg-slate-50"}`}
+      className={`w-full flex items-center p-3.5 rounded-2xl transition-all ${active ? "bg-green-50 text-teal-700" : "text-teal-500 hover:bg-green-50"}`}
     >
       <span className={`text-2xl ${!isExpanded && "mx-auto"}`}>{icon}</span>
       <span
