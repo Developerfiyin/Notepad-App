@@ -7,30 +7,7 @@ const Dashboard = () => {
 /
 export default Dashboard;
 */}
-import { useState } from 'react';
-import { HiPlus, HiSearch, HiOutlineDocumentText, HiOutlineTrash, HiStar, HiOutlineDocumentAdd } from "react-icons/hi";
-import { FaRegStickyNote } from "react-icons/fa";
-
-export default function Dashboard() {
-  // Set to empty array to test the Empty State
-  const [notes, setNotes] = useState([]); 
-
-  const handleCreateNote = () => {
-    // Logic to open editor or add a dummy note
-    console.log("Creating first note...");
-  };
-
-  return (
-    <div className="flex h-screen bg-slate-50">
-      {/* Sidebar (Same as before) */}
-      <aside className="w-64 bg-white border-r border-slate-200 p-6 flex flex-col gap-4">
-        <h2 className="text-xl font-bold text-indigo-600 flex items-center gap-2">
-          <FaRegStickyNote className="text-2xl" /> MyNotes
-        </h2>
-        {/* ... navigation links ... */}
-      </aside>
-
-      <main className="flex-1 flex flex-col">
+-1 flex flex-col">
         {/* Top Header */}
         <header className="h-16 bg-white border-b border-slate-200 flex items-center justify-between px-8">
           <div className="relative w-96">
