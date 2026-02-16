@@ -8,6 +8,9 @@ import {
   HiMenuAlt2,
   HiOutlineLogout,
 } from "react-icons/hi";
+
+import { MdLogout } from "react-icons/md";
+
 import NoteModal from "./Notemodal";
 
 export default function Dashboard() {
@@ -24,16 +27,16 @@ export default function Dashboard() {
     },
 
     {
-      id: 2 ,
+      id: 2,
       title: "How to settle disputes among triplets",
-      content: "Never pick a side, Pray for wisdom, concentrate on solving the pproblem rather than causing more.",
-      date: "Feb 15 2019"
-    }
+      content:
+        "Never pick a side, Pray for wisdom, concentrate on solving the problem rather than causing more.",
+      date: "Feb 15 2019",
+    },
   ]);
 
   // Function to add a new note
   const addNote = (newNote) => {
-    // Generate a unique ID (until we have a backend)
     const noteWithId = { ...newNote, id: Date.now() };
     setNotes([noteWithId, ...notes]); // Add to the TOP of the list
   };
@@ -81,6 +84,15 @@ export default function Dashboard() {
             isExpanded={isExpanded}
           />
         </nav>
+
+        <NavItem
+          icon={<MdLogout />}
+          label="Log-out"
+          isExpanded={isExpanded}
+        />
+      
+
+    
       </aside>
 
       {/* MAIN CONTENT */}

@@ -24,7 +24,7 @@ export default function NoteModal({ isOpen, onClose, onSave }) {
         {/* Header */}
         <div className="flex justify-between items-center p-6 border-b border-slate-100">
           <h2 className="text-xl font-bold text-green-400">Create New Note</h2>
-          <button onClick={onClose} className="text-slate-400 hover:text-slate-600 transition-colors">
+          <button onClick={onClose} className="text-green-400 hover:text-teal-600 transition-colors">
             <HiX className="text-2xl" />
           </button>
         </div>
@@ -39,9 +39,10 @@ export default function NoteModal({ isOpen, onClose, onSave }) {
               value={title}
               onChange={(e) => setTitle(e.target.value)}
               placeholder="e.g., Grocery List"
-              className="w-full px-4 py-2 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none transition-all"
+              className="w-full px-4 py-2 border border-slate-200 rounded-xl focus:ring-2 focus:ring-green-500 outline-none transition-all"
             />
           </div>
+
 
           <div>
             <label className="block text-sm font-medium text-slate-700 mb-1">Content</label>
@@ -59,7 +60,7 @@ export default function NoteModal({ isOpen, onClose, onSave }) {
             <button 
               type="button"
               onClick={onClose}
-              className="flex-1 px-4 py-2 text-teal-600 font-medium hover:bg-green-100 rounded-xl transition-colors"
+              className="flex-1 px-4 py-2 text-slate-600 font-medium hover:bg-green-100 rounded-xl transition-colors"
             >
               Cancel
             </button>
