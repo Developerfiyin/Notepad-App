@@ -83,7 +83,9 @@ export default function Dashboard() {
             isExpanded={isExpanded}
           />
         </nav>
-        <NavItem icon={<MdLogout />} label="Log-out" isExpanded={isExpanded} />
+        
+        <NavItem 
+         icon={<MdLogout className="text-2xl" />} label="Log-out" isExpanded={isExpanded}  />
       
         
   
