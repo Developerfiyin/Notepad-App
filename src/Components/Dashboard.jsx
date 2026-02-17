@@ -33,7 +33,7 @@ export default function Dashboard() {
         "Never pick a side, Pray for wisdom, concentrate on solving the problem rather than causing more.",
       date: "Feb 15 2019",
     },
-  ]);git 
+  ]);
 
   // Function to add a new note
   const addNote = (newNote) => {
