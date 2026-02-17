@@ -55,7 +55,7 @@ export default function Dashboard() {
         <div className="h-20 flex items-center px-6">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="p-2 hover:bg-green-200 rounded-xl text-green-400"
+            className="p-2 hover:bg-green-300 rounded-xl text-green-400"
           >
             <HiMenuAlt2 className="text-2xl" />
           </button>
