@@ -60,7 +60,7 @@ export default function Dashboard() {
             <HiMenuAlt2 className="text-2xl" />
           </button>
           <span
-            className={`ml-4 font-black text-xl text-green-400 transition-opacity ${isExpanded ? "opacity-100" : "opacity-0 hidden"}`}
+            className={`ml-4 font-black text-xl text-green-400 transition-opacity ${isExpanded ? "opacity-70" : "opacity-0 hidden"}`}
           >
             Notetaker App
           </span>
@@ -83,7 +83,7 @@ export default function Dashboard() {
             isExpanded={isExpanded}
           />
         </nav>
-        
+
         <NavItem 
          icon={<MdLogout className="text-2xl" />} label="Log-out" isExpanded={isExpanded}  />
       
