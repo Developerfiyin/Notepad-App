@@ -7,8 +7,8 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   return (
-    <main className="bg-black/90 w-full h-screen items-center overflow-hidden py-16 px-6 ">
-      <div className="md:mx-auto  mx-9  gap-4 font-semibold text-white rounded-2xl border border-gray-500 py-12 flex flex-col bg-black/60 text-center">
+    <main className="bg-black/90 w-full h-screen  items-center overflow-hidden py-16 px-6 ">
+      <div className="  gap-4 font-semibold text-white rounded-2xl border items-center justify-center border-gray-500 py-12 flex flex-col bg-black/60 text-center">
         <h5 className="text-base text-green-500 ">Let's Start</h5>
         <h2 className="text-2xl ">How do you plan to use Notetaker?</h2>
         <h4 className="text-base text-white/50 mb-12">
@@ -29,7 +29,7 @@ const LandingPage = () => {
           className="items-center justify-around group transition-all duration-300 hover:border-green-500 flex gap-5  border border-white/45 py-6 px-24 rounded-2xl mx-auto"
         >
           <div
-            className=" space-y-1 
+            className="space-y-1 
           "
           >
             <div className="h-3 w-3 ml-2 rounded-full bg-orange-500"></div>
@@ -39,6 +39,27 @@ const LandingPage = () => {
           <FaArrowRightLong className="transition-transform duration-300 transform group-hover:translate-x-1.5" />
         </button>
       </div>
+
+       function multiply(num1, num2) {
+
+        return num1 * num2;
+        
+       }
+
+         let result = multiply(5,6);
+       
+    // 1. We declare the function and name its placeholders (a and b)
+function multiply(num3, num4) {
+  // 2. We perform the math and "send back" the result
+  return num3 * num4;
+}
+
+// 3. we call the function with real numbers (arguments)
+let result = multiply(5, 6);
+
+// 4. Let's see if it worked
+console.log(result); // This will show 30 in the console
+
     </main>
   );
 };
