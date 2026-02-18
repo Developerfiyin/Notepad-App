@@ -39,27 +39,6 @@ const LandingPage = () => {
           <FaArrowRightLong className="transition-transform duration-300 transform group-hover:translate-x-1.5" />
         </button>
       </div>
-
-       function multiply(num1, num2) {
-
-        return num1 * num2;
-        
-       }
-
-         let result = multiply(5,6);
-       
-    // 1. We declare the function and name its placeholders (a and b)
-function multiply(num3, num4) {
-  // 2. We perform the math and "send back" the result
-  return num3 * num4;
-}
-
-// 3. we call the function with real numbers (arguments)
-let result = multiply(5, 6);
-
-// 4. Let's see if it worked
-console.log(result); // This will show 30 in the console
-
     </main>
   );
 };
