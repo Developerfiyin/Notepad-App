@@ -1,11 +1,11 @@
-// 1. We declare the function and name its placeholders (a and b)
-function multiply(num1, num2) {
-  // 2. We perform the math and "send back" the result
-  return num1 * num2;
+export default function condition() {
+let age = 31
+    if (age > 18) {
+        return "You are very much welcome"
+    } else {
+        return " Don't come close to the gate.!"
+    }
+    
 }
 
-// 3. we call the function with real numbers (arguments)
-let result = multiply(5, 6);
-
-// 4. Let's see if it worked
-console.log(result); // This will show 30 in the console
+alert(age);
