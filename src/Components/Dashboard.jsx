@@ -6,7 +6,7 @@ import {
   HiOutlineTrash,
   HiStar,
   HiMenuAlt2,
-  HiOutlineLogout,
+
 } from "react-icons/hi";
 
 import { MdLogout } from "react-icons/md";

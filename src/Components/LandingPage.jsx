@@ -7,8 +7,8 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   return (
-    <main className="bg-black/90 w-full h-screen items-center py-16 px-6">
-      <div className="mx-100 gap-4 font-semibold text-white rounded-2xl border border-gray-500 py-12 flex flex-col bg-black/60 text-center">
+    <main className="bg-black/90 w-full h-screen items-center overflow-hidden py-16 px-6 ">
+      <div className="md:mx-auto  mx-9  gap-4 font-semibold text-white rounded-2xl border border-gray-500 py-12 flex flex-col bg-black/60 text-center">
         <h5 className="text-base text-green-500 ">Let's Start</h5>
         <h2 className="text-2xl ">How do you plan to use Notetaker?</h2>
         <h4 className="text-base text-white/50 mb-12">
